@@ -18,7 +18,119 @@
   }
 }
 
-
 body {
   background-color: rgb(28, 28, 28);
 }
+
+
+/* --- polygons - animation --- */
+
+.polygon-one {
+  animation: 2s ease-in-out 0s alternate poly-one;
+}
+
+.polygon-two {
+  animation: 1.9s ease-in-out 0s alternate poly-two;
+}
+
+.polygon-three {
+  animation: 1.8s ease-in-out 0s alternate poly-three;
+}
+
+.polygon-four {
+  animation: 1.7s ease-in-out 0s alternate poly-four;
+}
+
+.polygon-five {
+  animation: 1.6s ease-in-out 0s alternate poly-five;
+}
+
+.polygon-six {
+  animation: 1.5s ease-in-out 0s alternate poly-six;
+}
+
+@keyframes poly-one {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: translate(-15px, 35px);
+  }
+}
+
+.degs-one {
+  transform: translate(-15px, 35px);
+}
+
+@keyframes poly-two {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(20deg) scale(1.2) translate(25px, 25px);
+  }
+}
+
+.degs-two {
+  transform: rotate(20deg) scale(1.2) translate(25px, 25px);
+}
+
+@keyframes poly-three {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(40deg) scale(1.3) translate(55px, 0);
+  }
+}
+
+.degs-three {
+  transform: rotate(40deg) scale(1.3) translate(55px, 0);
+}
+
+@keyframes poly-four {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(60deg) scale(1.5) translate(70px, -25px);
+  }
+}
+
+.degs-four {
+  transform: rotate(60deg) scale(1.5) translate(70px, -25px);
+}
+
+@keyframes poly-five {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(80deg) scale(1.7) translate(75px, -52px);
+  }
+}
+
+.degs-five {
+  transform: rotate(80deg) scale(1.7) translate(75px, -52px);
+}
+
+@keyframes poly-six {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(120deg) scale(2.2) translate(65px, -92px);
+  }
+}
+
+.degs-six {
+  transform: rotate(120deg) scale(2.2) translate(65px, -92px);
+}
+
+/*  ----- ------- ----- */

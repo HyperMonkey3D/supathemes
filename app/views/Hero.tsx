@@ -8,14 +8,16 @@ const Hero = () => {
     <section className="w-full xl:w-[1200px]  h-fit overflow-clip relative bg-brand-dark-gray">
       <Square numberOfSquares={squaresArray} gridPosition="top" />
       <Logo />
-      <div className="min-h-[300px] w-full px-10 py-10 lg:px-[140px] flex flex-col justify-between">
+      <div className="min-h-[300px] w-full px-10 py-10 lg:px-[140px] flex flex-col justify-between z-50">
         <h1 className="text-white text-5xl">
           Beautiful and Practical Website Themes Built with Framer
         </h1>
-        <div className="bg-brand-purple w-[275px] h-[72px] border border-brand-purple rounded-lg flex justify-center items-center mt-8">
-          <Link href={"/"} className="text-white text-3xl">
-            Explore
-          </Link>
+        <div className="w-full flex justify-center md:justify-start z-50">
+          <div className="bg-brand-purple w-[275px] h-[72px] border border-brand-purple rounded-lg flex justify-center items-center mt-8">
+            <Link href={"/"} className="text-white text-3xl">
+              Explore
+            </Link>
+          </div>
         </div>
       </div>
     </section>
