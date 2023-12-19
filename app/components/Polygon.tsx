@@ -1,13 +1,13 @@
 const Polygon = () => {
   return (
-    <div className="relative -translate-x-16 -translate-y-3">
+    <div className="relative -translate-x-10 -translate-y-6 md:-translate-x-14 md:-translate-y-10 lg:-translate-x-20 lg:-translate-y-14">
       <svg
         width="180"
         height="182"
         viewBox="0 0 180 182"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 left-0 polygon-one degs-one"
+        className="absolute top-0 left-0 polygon-one  w-[100px] md:w-[130px] lg:w-[180px] h-fit"
       >
         <path
           d="M26.5473 5.6835C9.74916 6.36783 -2.34571 22.0724 1.28264 38.4882L28.2856 160.658C33.2322 183.038 62.0555 189.465 76.0406 171.306L174.053 44.0428C188.038 25.8838 174.464 -0.34242 151.562 0.590546L26.5473 5.6835Z"
@@ -34,7 +34,7 @@ const Polygon = () => {
         viewBox="0 0 180 182"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 left-0 polygon-two degs-two"
+        className="absolute top-0 left-0 polygon-two w-[100px] md:w-[130px] lg:w-[180px] h-fit"
       >
         <path
           d="M26.5473 5.6835C9.74916 6.36783 -2.34571 22.0724 1.28264 38.4882L28.2856 160.658C33.2322 183.038 62.0555 189.465 76.0406 171.306L174.053 44.0428C188.038 25.8838 174.464 -0.34242 151.562 0.590546L26.5473 5.6835Z"
@@ -61,7 +61,7 @@ const Polygon = () => {
         viewBox="0 0 180 182"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 left-0 polygon-three degs-three"
+        className="absolute top-0 left-0 polygon-three  w-[100px] md:w-[130px] lg:w-[180px] h-fit"
       >
         <path
           d="M26.5473 5.6835C9.74916 6.36783 -2.34571 22.0724 1.28264 38.4882L28.2856 160.658C33.2322 183.038 62.0555 189.465 76.0406 171.306L174.053 44.0428C188.038 25.8838 174.464 -0.34242 151.562 0.590546L26.5473 5.6835Z"
@@ -89,7 +89,7 @@ const Polygon = () => {
         viewBox="0 0 180 182"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 left-0 polygon-four degs-four"
+        className="absolute top-0 left-0 polygon-four  w-[100px] md:w-[130px] lg:w-[180px] h-fit"
       >
         <path
           d="M26.5473 5.6835C9.74916 6.36783 -2.34571 22.0724 1.28264 38.4882L28.2856 160.658C33.2322 183.038 62.0555 189.465 76.0406 171.306L174.053 44.0428C188.038 25.8838 174.464 -0.34242 151.562 0.590546L26.5473 5.6835Z"
@@ -116,7 +116,7 @@ const Polygon = () => {
         viewBox="0 0 180 182"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 left-0 polygon-five degs-five"
+        className="absolute top-0 left-0 polygon-five w-[100px] md:w-[130px] lg:w-[180px] h-fit"
       >
         <path
           d="M26.5473 5.6835C9.74916 6.36783 -2.34571 22.0724 1.28264 38.4882L28.2856 160.658C33.2322 183.038 62.0555 189.465 76.0406 171.306L174.053 44.0428C188.038 25.8838 174.464 -0.34242 151.562 0.590546L26.5473 5.6835Z"
@@ -137,14 +137,14 @@ const Polygon = () => {
           </linearGradient>
         </defs>
       </svg>
-      
+
       <svg
         width="180"
         height="182"
         viewBox="0 0 180 182"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 left-0 polygon-six degs-six w-[100px] h-fit md:-[182px] md:w-[180px]"
+        className="absolute top-0 left-0 polygon-six  w-[100px] md:w-[130px] lg:w-[180px] h-fit"
       >
         <path
           d="M26.5473 5.6835C9.74916 6.36783 -2.34571 22.0724 1.28264 38.4882L28.2856 160.658C33.2322 183.038 62.0555 189.465 76.0406 171.306L174.053 44.0428C188.038 25.8838 174.464 -0.34242 151.562 0.590546L26.5473 5.6835Z"
@@ -165,8 +165,6 @@ const Polygon = () => {
           </linearGradient>
         </defs>
       </svg>
-    
-      
     </div>
   );
 };

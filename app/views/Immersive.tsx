@@ -1,24 +1,30 @@
 import Polygon from "../components/Polygon";
-
+//flex-wrap sm:flex-row
 const Immersive = () => {
   return (
     <section className="w-full xl:w-[1200px] h-fit bg-brand-dark-gray my-20">
-      <div className="bg-brand-dark-gray pl-36">
+      <div className="bg-brand-dark-gray pl-20 sm:pl-36">
         <div>
           <h2 className="text-5xl text-white py-12">Immersive by Design</h2>
         </div>
-        <div className=" bg-black min-h-[533px] flex justify-between">
-          <div className="w-[250px] md:w-[300px]  h-[533px] bg-slate-200">
+        <div className=" bg-black h-300px md:min-h-[533px]  flex justify-between">
+          <div className="w-[150px] md:w-[400px] h-[300px]  md:h-[533px] bg-black mr-4">
             <Polygon />
           </div>
-          <div className="bg-black flex flex-col justify-evenly w-[500px]">
-            <div>
-              <h3 className="text-white text-6xl">Create.</h3>
-              <h3 className="text-white text-6xl">Express.</h3>
-              <h3 className="text-white text-6xl">Promote.</h3>
+          <div className="bg-black flex flex-col justify-evenly w-[350px] h-[300px] md:h-[533px] md:w-[500px] lg:w-[550px] py-6 px-3 lg:py-0 lg:px-0">
+            <div className="z-50">
+              <h3 className="text-white text-4xl sm:text-5xl md:text-6xl">
+                Create.
+              </h3>
+              <h3 className="text-white text-4xl sm:text-5xl md:text-6xl">
+                Express.
+              </h3>
+              <h3 className="text-white text-4xl sm:text-5xl md:text-6xl">
+                Promote.
+              </h3>
             </div>
-            <div className="w-[300px] md:w-[450px] ">
-              <p className="text-white text-2xl">
+            <div className="w-[250px] sm:w-[300px] md:w-[380px] lg:w-[450px] z-50 ">
+              <p className="text-white text-xl md:text-2xl">
                 Tell your story. Build your audience. Create your legacy. No
                 compromises.
               </p>

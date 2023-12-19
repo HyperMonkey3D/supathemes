@@ -19,8 +19,10 @@ const config: Config = {
         "brand-square-purple": "rgba(154,1,249,0.25)",
         "brand-square-dark-pink": "rgba(246, 33, 136, 0.25)",
         "brand-square-green": "rgba(36, 249, 45, 0.25)",
-        "brand-stroke-dark-gray": "#2E2E2E"
-        
+        "brand-stroke-dark-gray": "#2E2E2E",
+        "brand-scarlet": "rgba(89, 0, 30, 1)",
+        "brand-light-scarlet": "rgba(249, 87, 143, 1)",
+        "brand-dark-scarlet": "rgba(30, 30, 30, 1)",
       }
     },
   },

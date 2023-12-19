@@ -22,31 +22,36 @@ body {
   background-color: rgb(28, 28, 28);
 }
 
-
 /* --- polygons - animation --- */
 
 .polygon-one {
   animation: 2s ease-in-out 0s alternate poly-one;
+  transform: rotate(-3deg) translate(6%, 34%);
 }
 
 .polygon-two {
   animation: 1.9s ease-in-out 0s alternate poly-two;
+  transform: rotate(20deg) scale(1.2) translate(35%, 17%);
 }
 
 .polygon-three {
   animation: 1.8s ease-in-out 0s alternate poly-three;
+  transform: rotate(40deg) scale(1.3) translate(48%, 0);
 }
 
 .polygon-four {
   animation: 1.7s ease-in-out 0s alternate poly-four;
+  transform: rotate(60deg) scale(1.5) translate(55%, -18%);
 }
 
 .polygon-five {
   animation: 1.6s ease-in-out 0s alternate poly-five;
+  transform: rotate(80deg) scale(1.7) translate(55%, -36%);
 }
 
 .polygon-six {
   animation: 1.5s ease-in-out 0s alternate poly-six;
+  transform: rotate(120deg) scale(2.2) translate(40%, -60%);
 }
 
 @keyframes poly-one {
@@ -55,12 +60,8 @@ body {
   }
 
   to {
-    transform: translate(-15px, 35px);
+    transform: rotate(-3deg) translate(6%, 34%);
   }
-}
-
-.degs-one {
-  transform: translate(-15px, 35px);
 }
 
 @keyframes poly-two {
@@ -69,12 +70,8 @@ body {
   }
 
   to {
-    transform: rotate(20deg) scale(1.2) translate(25px, 25px);
+    transform: rotate(20deg) scale(1.2) translate(35%, 17%);
   }
-}
-
-.degs-two {
-  transform: rotate(20deg) scale(1.2) translate(25px, 25px);
 }
 
 @keyframes poly-three {
@@ -83,12 +80,8 @@ body {
   }
 
   to {
-    transform: rotate(40deg) scale(1.3) translate(55px, 0);
+    transform: rotate(40deg) scale(1.3) translate(48%, 0);
   }
-}
-
-.degs-three {
-  transform: rotate(40deg) scale(1.3) translate(55px, 0);
 }
 
 @keyframes poly-four {
@@ -97,12 +90,8 @@ body {
   }
 
   to {
-    transform: rotate(60deg) scale(1.5) translate(70px, -25px);
+    transform: rotate(60deg) scale(1.5) translate(55%, -18%);
   }
-}
-
-.degs-four {
-  transform: rotate(60deg) scale(1.5) translate(70px, -25px);
 }
 
 @keyframes poly-five {
@@ -111,12 +100,8 @@ body {
   }
 
   to {
-    transform: rotate(80deg) scale(1.7) translate(75px, -52px);
+    transform: rotate(80deg) scale(1.7) translate(55%, -36%);
   }
-}
-
-.degs-five {
-  transform: rotate(80deg) scale(1.7) translate(75px, -52px);
 }
 
 @keyframes poly-six {
@@ -125,12 +110,8 @@ body {
   }
 
   to {
-    transform: rotate(120deg) scale(2.2) translate(65px, -92px);
+    transform: rotate(120deg) scale(2.2) translate(40%, -60%);
   }
-}
-
-.degs-six {
-  transform: rotate(120deg) scale(2.2) translate(65px, -92px);
 }
 
 /*  ----- ------- ----- */
