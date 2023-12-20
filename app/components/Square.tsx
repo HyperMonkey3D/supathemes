@@ -1,5 +1,5 @@
 import lines from "@/public/backgroundlines.svg";
-import Image from "next/image";
+
 interface Props {
   numberOfSquares: number[];
   gridPosition: string;
@@ -25,6 +25,8 @@ const Square = ({ numberOfSquares, gridPosition }: Props) => {
   };
 
   return (
+    //gridposition top is in hero section
+    //gridposition bottom in in footer
     <div className="min-h-[500px]  w-full xl:w-[1200px] grid grid-cols-2 md:grid-cols-6 grid-rows-4 md:grid-rows-2 gap-0.5 bg-brand-stroke-dark-gray relative">
       {gridPosition === "top" &&
         numberOfSquares.map((item, index) => {
@@ -32,8 +34,8 @@ const Square = ({ numberOfSquares, gridPosition }: Props) => {
             <div
               className={
                 index === 1 || index === 2 || index === 5 || index === 6
-                  ? "w-full h-full  col-span-1 bg-brand-dark-gray row-span-1 md:col-span-2"
-                  : "w-full h-full bg-brand-dark-gray"
+                  ? "w-full h-full  col-span-1 bg-black row-span-1 md:col-span-2"
+                  : "w-full h-full bg-black"
               }
               key={index}
             >
@@ -41,10 +43,23 @@ const Square = ({ numberOfSquares, gridPosition }: Props) => {
             </div>
           );
         })}
+      {gridPosition === "bottom" &&
+        numberOfSquares.map((item, index) => {
+          return (
+            <div
+              className={
+                index === 0 || index === 5
+                  ? "w-full h-full  col-span-1 bg-black row-span-1 md:col-span-3"
+                  : index === 1 || index === 4
+                  ? "w-full h-full  col-span-1 bg-black row-span-1 md:col-span-2"
+                  : "w-full h-full bg-black"
+              }
+              key={index}
+            ></div>
+          );
+        })}
     </div>
   );
 };
 
 export default Square;
-
-//w-full  md:w-[375px] h-[250px]

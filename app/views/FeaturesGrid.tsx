@@ -3,8 +3,13 @@ const FeaturesGrid = () => {
     <section className="w-full xl:w-[1200px] min-h-[650px] h-fit bg-brand-dark-gray py-11">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-4 sm:grid-rows-2 gap-4  md:gap-10 w-[85%] h-full bg-brand-dark-gray  mx-auto">
         <div className="bg-slate-3 w-full h-full p-8 flex flex-col justify-evenly  lg:col-span-2 bg-brand-dark-gray border border-brand-stroke-dark-gray rounded-xl  ">
-          <div className="mb-5">
+          <div className="mb-5 flex justify-between items-center pr-12 ">
             <h2 className="text-2xl text-[#3EF1C6] font-semibold">Adaptive</h2>
+            <div className="flex  w-fit">
+              <p className="text-xl text-[#8C8C8C] pr-2">a</p>
+              <p className="text-2xl text-[#FFB2CC] pr-2">A</p>
+              <p className="text-4xl text-[#15D211] pr-2 font-bold">A</p>
+            </div>
           </div>
           <div>
             <p className="text-white">

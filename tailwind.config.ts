@@ -23,6 +23,10 @@ const config: Config = {
         "brand-scarlet": "rgba(89, 0, 30, 1)",
         "brand-light-scarlet": "rgba(249, 87, 143, 1)",
         "brand-dark-scarlet": "rgba(30, 30, 30, 1)",
+        "brand-purple-light": "rgba(109, 8, 236, 1)",
+        "brand-purple-mid": "rgba(84, 0, 192, 1)",
+        "brand-purple-dark": "rgba(38, 4, 82, 1)",
+        "brand-pink": "#F9578F"
       }
     },
   },
