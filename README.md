@@ -6,5 +6,5 @@ This is a project currently in development for personal use. This will be a digi
 
 ## Technologies 
 
-This is a site built with NextJS and Tailwind with an emphasis on animations and transitions. The store will be implemented with Lemon Squeeze.
+This site uses NextJS and Tailwind with an emphasis on animations and transitions. The store will be implemented with Lemon Squeeze.
 
