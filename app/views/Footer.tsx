@@ -1,4 +1,5 @@
 import Square from "../components/Square";
+import Link from "next/link";
 import Image from "next/image";
 import radial from "@/public/Rectangle14.svg";
 
@@ -11,9 +12,26 @@ const Footer = () => {
         <div className="absolute top-0 left-0 z-50 mix-blend-screen">
           <Image src={radial} alt="radial" />
         </div>
-        <Square numberOfSquares={squaresArray} gridPosition="bottom" />
+        <div className="border-y md:border-t md:border-b-0 border-brand-stroke-dark-gray">
+          <Square numberOfSquares={squaresArray} gridPosition="bottom" />
+        </div>
       </div>
-      <div className="w-full h-[237px] bg-black"></div>
+      <div className="w-full h-[237px] flex  justify-start items-end pl-10 md:pl-14 lg:pl-20  pb-12 bg-black ">
+        <ul className="flex flex-col lg:flex-row justify-between lg:w-[450px] h-[130px] lg:h-fit ">
+          <li className="text-white">
+            <Link href={"/"}>About</Link>
+          </li>
+          <li className="text-white">
+            <Link href={"/"}>Contact</Link>
+          </li>
+          <li className="text-white">
+            <Link href={"/"}>Privacy Policy</Link>
+          </li>
+          <li className="text-white">
+            <Link href={"/"}>Terms of Service</Link>
+          </li>
+        </ul>
+      </div>
     </footer>
   );
 };

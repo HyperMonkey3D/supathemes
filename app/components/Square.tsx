@@ -1,4 +1,9 @@
 import lines from "@/public/backgroundlines.svg";
+import Image from "next/image";
+import logo from "@/public/logo-white-1.svg";
+import x from "@/public/x.svg";
+import facebook from "@/public/facebook.svg";
+import instagram from "@/public/instagram.svg";
 
 interface Props {
   numberOfSquares: number[];
@@ -58,6 +63,30 @@ const Square = ({ numberOfSquares, gridPosition }: Props) => {
             ></div>
           );
         })}
+      {gridPosition === "bottom" && (
+        <>
+          <div className="absolute top-3 left-2 sm:left-4 md:top-14 md:left-8 lg:top-16 lg:left-20  ">
+            <Image src={logo} alt="logo" />
+          </div>
+          <ul className="absolute right-10 bottom-10 flex justify-between w-[146px] md:w-[156px]  lg:w-[176px] z-50">
+            <li>
+              <a href="https://twitter.com/" target="_blank">
+                <Image src={x} alt="x" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <Image src={facebook} alt="facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <Image src={instagram} alt="instagram" />
+              </a>
+            </li>
+          </ul>
+        </>
+      )}
     </div>
   );
 };
