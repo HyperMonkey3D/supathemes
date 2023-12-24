@@ -1,3 +1,6 @@
+import Corner from "../components/Corner";
+import Spheres from "../components/Spheres";
+
 const FeaturesGrid = () => {
   return (
     <section className="w-full xl:w-[1200px] min-h-[650px] h-fit bg-brand-dark-gray py-11">
@@ -12,7 +15,7 @@ const FeaturesGrid = () => {
             </div>
           </div>
           <div>
-            <p className="text-white">
+            <p className="text-white font-light">
               Our themes can be easily modified to fit your needs. From fonts to
               the background color, everything is clearly named and arranged so
               that you can make them yours.{" "}
@@ -23,29 +26,31 @@ const FeaturesGrid = () => {
           <div className="mb-5">
             <h2 className="text-2xl text-white font-semibold">Responsive</h2>
           </div>
-          <p className="text-white">
+          <p className="text-white font-light">
             There are dozens of screen sizes out there. Each SupaTheme has been
             built with responsive behaviors in mind from the ground up so your
             content can be clearly seen, no matter the screen.{" "}
           </p>
         </div>
-        <div className="bg-slate-3 w-full h-full p-8 flex flex-col justify-evenly bg-brand-dark-gray border border-brand-stroke-dark-gray rounded-xl ">
+        <div className="bg-slate-3 w-full h-full p-8 flex flex-col justify-evenly bg-brand-dark-gray border border-brand-stroke-dark-gray rounded-xl relative">
+          <Spheres />
           <div className="md:mb-5">
             <h2 className="text-2xl text-[#3FBAFF] font-semibold">Connected</h2>
           </div>
           <div>
-            <p className="text-white">
+            <p className="text-white font-light">
               Depending on the theme type, you can find fully configured
               databases so that you can start publishing.
             </p>
           </div>
         </div>
-        <div className="bg-slate-3 w-full h-full p-8 flex flex-col justify-evenly bg-brand-dark-gray border border-brand-stroke-dark-gray rounded-xl">
+        <div   className="bg-slate-3 w-full h-full p-8 flex flex-col justify-evenly bg-brand-dark-gray border border-brand-stroke-dark-gray rounded-xl relative corner">
+          <Corner />
           <div className="md:mb-5">
             <h2 className="text-2xl text-[#FF5252] font-semibold">Modern</h2>
           </div>
           <div>
-            <p className="text-white">
+            <p className="text-white font-light">
               Built with the core design principles in mind, our themes are
               modern, attractive and functional.
             </p>

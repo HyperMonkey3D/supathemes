@@ -114,4 +114,80 @@ body {
   }
 }
 
-/*  ----- ------- ----- */
+
+#database * {
+  transform-box: fill-box
+}
+
+#sphere-top {
+  animation-delay: 1.2s;
+}
+
+
+
+
+
+
+/* --- rings top ---  */
+
+#spheres-ring-one {
+  animation: 3s ease-in-out infinite  pulse;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+#spheres-ring-two {
+  animation: 3s ease-in-out infinite  pulse;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+@keyframes fillAnimation {
+  0% {
+    fill: #3FBAFF;
+  }
+  25% {
+    fill: #9A01F9;
+  }
+ 
+  70% {
+    fill: #3FBAFF;
+  }
+}
+
+
+
+#spheres-center-2 {
+  animation:  3s ease-in-out infinite fillAnimation; 
+  animation-delay: 2s;
+}
+
+
+/* --- corner svg --- */
+
+.corner.svg-corner :hover{
+  transform: scale(120%)
+}
