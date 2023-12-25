@@ -1,6 +1,6 @@
 const Polygon = () => {
   return (
-    <div className="relative -translate-x-10 -translate-y-6 md:-translate-x-14 md:-translate-y-10 lg:-translate-x-20 lg:-translate-y-14">
+    <div className="relative -translate-y-6  md:translate-x-2 md:-translate-y-10 lg:-translate-x-20 lg:-translate-y-14">
       <svg
         width="180"
         height="182"

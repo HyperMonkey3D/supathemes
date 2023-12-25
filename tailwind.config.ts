@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         "brand-dark-gray": "#1E1E1E",
+        "brand-darker-gray": "#1B1B1B",
         "brand-purple": "#6D08EC",
         "brand-square-purple": "rgba(154,1,249,0.25)",
         "brand-square-dark-pink": "rgba(246, 33, 136, 0.25)",

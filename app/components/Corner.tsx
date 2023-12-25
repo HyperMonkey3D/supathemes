@@ -1,4 +1,8 @@
-const Corner = () => {
+interface Hovered {
+  hovered: boolean;
+}
+
+const Corner = ({ hovered }: Hovered) => {
   return (
     <svg
       width="90"
@@ -6,7 +10,11 @@ const Corner = () => {
       viewBox="0 0 90 75"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute top-5 right-5 "
+      className={
+        hovered
+          ? "absolute top-6 right-6 transition ease-in-out delay-150 scale-125 duration-300"
+          : "absolute top-6 right-6 transition ease-in-out delay-150 duration-300"
+      }
     >
       <g id="corner">
         <path
