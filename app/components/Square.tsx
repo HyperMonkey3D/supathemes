@@ -65,21 +65,22 @@ const Square = ({ numberOfSquares, gridPosition }: Props) => {
         })}
       {gridPosition === "bottom" && (
         <>
-          <div className="absolute top-3 left-2 sm:left-4 md:top-14 md:left-8 lg:top-16 lg:left-20  ">
+          <div className="absolute top-8 left-2 sm:top-3 sm:left-4 md:top-14 md:left-8 lg:top-16 lg:left-20 w-[100px] sm:w-[200px]  ">
             <Image src={logo} alt="logo" />
           </div>
-          <ul className="absolute right-10 bottom-10 flex justify-between w-[146px] md:w-[156px]  lg:w-[176px] z-50">
-            <li>
-              <a href="https://twitter.com/" target="_blank">
+          <ul className="absolute right-5 bottom-10  md:right-10 flex justify-between w-[126px] md:w-[156px]  lg:w-[176px] z-50">
+            <li className="w-[24px] h-[24px] sm:w-[32px] sm:h-[32px]">
+              <a  href="https://twitter.com/" target="_blank">
                 <Image src={x} alt="x" />
+              
               </a>
             </li>
-            <li>
+            <li className="w-[24px] h-[24px] sm:w-[32px] sm:h-[32px]">
               <a href="https://www.facebook.com/" target="_blank">
                 <Image src={facebook} alt="facebook" />
               </a>
             </li>
-            <li>
+            <li className="w-[24px] h-[24px] sm:w-[32px] sm:h-[32px]">
               <a href="https://www.instagram.com/" target="_blank">
                 <Image src={instagram} alt="instagram" />
               </a>

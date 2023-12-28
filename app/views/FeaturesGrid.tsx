@@ -27,7 +27,7 @@ const FeaturesGrid = () => {
             </p>
           </div>
         </div>
-        <div className="lg:bg-gradient-to-br from-brand-dark-scarlet from-5%  via-brand-light-scarlet via-60% to-brand-scarlet to-95% w-full h-full lg:row-span-2  bg-brand-darker-gray border border-brand-stroke-dark-gray rounded-xl px-8 py-12 flex flex-col justify-evenly  ">
+        <div className=" w-full h-full lg:row-span-2  bg-brand-darker-gray border border-brand-stroke-dark-gray rounded-xl px-8 py-12 flex flex-col justify-evenly  ">
           <div className="mb-5">
             <h2 className="text-2xl text-white font-semibold">Responsive</h2>
           </div>
@@ -52,9 +52,10 @@ const FeaturesGrid = () => {
         <div
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="bg-slate-3 w-full h-full p-8 flex flex-col justify-evenly bg-brand-darker-gray border  hover:scale-105 transition ease-in-out delay-200 duration-500 border-brand-stroke-dark-gray rounded-xl relative corner"
+          // id="modern-background"
+          className=" w-full h-full p-8 flex flex-col justify-evenly border  hover:scale-105 transition ease-in-out duration-500 border-brand-stroke-dark-gray rounded-xl relative corner"
         >
-          <Corner hovered={isHovered} />
+          {/* <Corner hovered={isHovered} /> */}
           <div className="md:mb-5">
             <h2 className="text-2xl text-[#FF5252] font-semibold">Modern</h2>
           </div>

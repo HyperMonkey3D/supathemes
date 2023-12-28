@@ -2,7 +2,7 @@ const Spheres = () => {
   return (
     <>
       <svg
-        width="115"
+      width="115"
         height="116"
         viewBox="0 0 115 116"
         fill="none"
@@ -24,7 +24,7 @@ const Spheres = () => {
               cy="58"
               r="19"
               stroke="#F9578F"
-              stroke-width="2"
+              strokeWidth="2"
             />
             <circle
               id="spheres-center"
@@ -33,13 +33,13 @@ const Spheres = () => {
               r="9"
               fill="#3FBAFF"
               stroke="#3FBAFF"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </g>
         </g>
       </svg>
       <svg
-        width="115"
+      width="115"
         height="116"
         viewBox="0 0 115 116"
         fill="none"
@@ -55,7 +55,7 @@ const Spheres = () => {
               r="9"
               fill="#3FBAFF"
               stroke="none"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </g>
         </g>
