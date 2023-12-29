@@ -32,7 +32,7 @@ const Square = ({ numberOfSquares, gridPosition }: Props) => {
   return (
     //gridposition top is in hero section
     //gridposition bottom in in footer
-    <div className="min-h-[500px]  w-full xl:w-[1200px] grid grid-cols-2 md:grid-cols-6 grid-rows-4 md:grid-rows-2 gap-0.5 bg-brand-stroke-dark-gray relative">
+    <div className="min-h-[500px]  w-full xl:w-[1200px] grid grid-cols-2 md:grid-cols-6 grid-rows-4 md:grid-rows-2 gap-0.5 bg-brand-stroke-dark-gray relative ">
       {gridPosition === "top" &&
         numberOfSquares.map((item, index) => {
           return (
@@ -70,9 +70,8 @@ const Square = ({ numberOfSquares, gridPosition }: Props) => {
           </div>
           <ul className="absolute right-5 bottom-10  md:right-10 flex justify-between w-[126px] md:w-[156px]  lg:w-[176px] z-50">
             <li className="w-[24px] h-[24px] sm:w-[32px] sm:h-[32px]">
-              <a  href="https://twitter.com/" target="_blank">
+              <a href="https://twitter.com/" target="_blank">
                 <Image src={x} alt="x" />
-              
               </a>
             </li>
             <li className="w-[24px] h-[24px] sm:w-[32px] sm:h-[32px]">

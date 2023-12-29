@@ -3,11 +3,13 @@ import Polygon from "../components/Polygon";
 const Immersive = () => {
   return (
     <section className="w-full xl:w-[1200px] h-fit my-20">
-      <div >
+      <div>
         <div className="mx-3">
-          <h2 className="text-7xl sm:text-8xl lg:text-9xl text-white  font-bold">Immersive by <br /> <span className="text">Design</span></h2>
+          <h2 className="text-7xl sm:text-8xl lg:text-9xl text-white  font-bold">
+            Immersive by <br /> <span className="text">Design</span>
+          </h2>
         </div>
-        <div className="bg-brand-dark-gray h-300px md:min-h-[533px]  flex justify-between border border-brand-stroke-dark-gray rounded-b-xl mx-3">
+        <div className="bg-brand-dark-gray h-300px md:min-h-[533px]  flex justify-between border border-brand-stroke-dark-gray rounded-xl mx-3">
           <div className="w-[150px] md:w-[400px] h-[300px]  md:h-[533px] ">
             <Polygon />
           </div>

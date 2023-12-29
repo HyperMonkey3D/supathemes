@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
 
 /* --- polygons - animation --- */
@@ -115,24 +115,18 @@ body {
   }
 }
 
-
 #database * {
-  transform-box: fill-box
+  transform-box: fill-box;
 }
 
 #sphere-top {
   animation-delay: 1.2s;
 }
 
-
-
-
-
-
 /* --- rings top ---  */
 
 #spheres-ring-one {
-  animation: 3s ease-in-out infinite  pulse;
+  animation: 3s ease-in-out infinite pulse;
   transform-origin: center;
 }
 
@@ -149,7 +143,7 @@ body {
 }
 
 #spheres-ring-two {
-  animation: 3s ease-in-out infinite  pulse;
+  animation: 3s ease-in-out infinite pulse;
   transform-origin: center;
 }
 
@@ -165,37 +159,33 @@ body {
   }
 }
 
-
 @keyframes fillAnimation {
   0% {
-    fill: #3FBAFF;
+    fill: #3fbaff;
   }
   25% {
-    fill: #9A01F9;
+    fill: #9a01f9;
   }
- 
+
   70% {
-    fill: #3FBAFF;
+    fill: #3fbaff;
   }
 }
 
-
-
 #spheres-center-2 {
-  animation:  3s ease-in-out infinite fillAnimation; 
+  animation: 3s ease-in-out infinite fillAnimation;
   animation-delay: 2s;
 }
 
-
 /* --- corner svg --- */
 
-.corner.svg-corner :hover{
-  transform: scale(120%)
+.corner.svg-corner :hover {
+  transform: scale(120%);
 }
 
 /* --- div --- */
 
-.div  {
+.div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -207,30 +197,73 @@ body {
 }
 
 @keyframes animatedBackground {
-  0%, 100% {
-    background-color: #5ab6ec ;
+  0%,
+  100% {
+    background-color: #5ab6ec;
   }
   25% {
-    background-color: #2cf105 ;
+    background-color: #2cf105;
   }
- 
+
   75% {
-    background-color: #c6f105 ;
+    background-color: #c6f105;
   }
-
-  
-
 }
 
 #modern-background {
-  background: linear-gradient(#5ca5cf17, #059bf1) ;
+  background: linear-gradient(#5ca5cf17, #059bf1);
   background-color: #5ab6ec;
-  animation:  10s linear infinite animatedBackground; 
- 
+  animation: 10s linear infinite animatedBackground;
 }
 
 .text {
-  background: linear-gradient(60deg, #b2e1fb, #ff478e,  #fb0060);
-    background-clip: text;
-    color: rgba(205, 31, 31, 0.2);
+  background: linear-gradient(60deg, #b2e1fb, #ff478e, #fb0060);
+  background-clip: text;
+  color: rgba(205, 31, 31, 0.2);
+}
+
+/*  --- sticky navbar ---  */
+
+.navbar {
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.logo-show {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.logo-show.logo-hide {
+  opacity: 1;
+}
+
+.content {
+  padding: 0;
+}
+
+.sticky + .content {
+  padding-top: 85px;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%);
+  transition: 0.3s ease-in-out;
+}
+
+.menu.menu-moved {
+  right: 0;
+  transform: translate(-10%);
 }

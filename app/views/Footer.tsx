@@ -7,7 +7,7 @@ const Footer = () => {
   const squaresArray = [1, 2, 3, 4, 5, 6, 7, 8];
 
   return (
-    <footer className="w-full xl:w-[1200px] h-fit bg-brand-dark-gray ">
+    <footer className="w-full xl:w-[1200px] h-fit bg-brand-dark-gray mx-auto ">
       <div className="relative w-full h-full">
         <div className="absolute top-0 left-0 z-50 mix-blend-screen">
           <Image src={radial} alt="radial" />
