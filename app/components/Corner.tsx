@@ -4,69 +4,68 @@ interface Hovered {
 
 const Corner = ({ hovered }: Hovered) => {
   return (
-    // <svg
-    //   width="90"
-    //   height="75"
-    //   viewBox="0 0 90 75"
-    //   fill="none"
-    //   xmlns="http://www.w3.org/2000/svg"
-    //   className={
-    //     hovered
-    //       ? "absolute top-6 right-6 transition ease-in-out  scale-125 duration-300"
-    //       : "absolute top-6 right-6 transition ease-in-out  duration-300"
-    //   }
-    // >
-    //   <g id="corner">
-    //     <path
-    //       id="background"
-    //       d="M1 3H72C80.2843 3 87 9.71573 87 18V74H1V3Z"
-    //       fill="url(#paint0_linear_139_3)"
-    //     />
-    //     <path
-    //       id="corner-line"
-    //       d="M1 1.5H64C81 1.5 88.5 11.5 88.5 24C88.5 36.5 88.5 59.5 88.5 74"
-    //       stroke="url(#paint1_linear_139_3)"
-    //       strokeWidth="2"
-    //       strokeLinecap="square"
-    //     />
-    //   </g>
-    //   <defs>
-    //     <linearGradient
-    //       id="paint0_linear_139_3"
-    //       x1="87"
-    //       y1="3"
-    //       x2="37"
-    //       y2="58.5"
-    //       gradientUnits="userSpaceOnUse"
-    //     >
-    //       <stop />
-    //       <stop offset="0.442708" stopColor="#141414" />
-    //       <stop offset="1" stopColor="#1E1E1E" stopOpacity="0" />
-    //     </linearGradient>
-    //     <linearGradient
-    //       id="paint1_linear_139_3"
-    //       x1="38.5"
-    //       y1="-16"
-    //       x2="101"
-    //       y2="38"
-    //       gradientUnits="userSpaceOnUse"
-    //     >
-    //       <stop stopColor="#FF3FB2" stopOpacity="0.03" />
-    //       <stop offset="0.322917" stopColor="#FD8888" stopOpacity="0.562212" />
-    //       <stop offset="0.588542" stopColor="#FB1262" />
-    //       <stop offset="0.807292" stopColor="#FD88B1" />
-    //       <stop offset="1" stopColor="#FF3FEC" stopOpacity="0.03" />
-    //     </linearGradient>
-    //   </defs>
-    // </svg>
-
-
-
-    <>
-      <div className="div p-2 bg-brand-dark-gray border   " >
-     
-      </div>
-    </>
+    <svg
+      width="350"
+      height="350"
+      viewBox="0 0 357 309"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={
+        hovered
+          ? "w-[350px] absolute top-3 right-20 transition ease-in-out  scale-125 duration-300"
+          : "w-[350px] absolute top-3 right-20 transition ease-in-out  duration-300"
+      }
+    >
+      <g id="circle-glow" clipPath="url(#clip0_156_15)">
+        <g id="Group">
+          <ellipse
+            id="Ellipse-outer"
+            cx="188.591"
+            cy="146.364"
+            rx="242.267"
+            ry="223.389"
+            transform="rotate(24.7808 188.591 146.364)"
+            fill="url(#paint0_radial_156_15)"
+            className={hovered ? "glow" : "hidden"}
+          />
+          <circle
+            id="Ellipse-inner"
+            cx="189.017"
+            cy="185.94"
+            r="115.72"
+            fill="url(#paint1_linear_156_15)"
+          />
+        </g>
+      </g>
+      <defs>
+        <radialGradient
+          id="paint0_radial_156_15"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(207.614 137.599) rotate(157.139) scale(145.618 137.457)"
+        >
+          <stop stopColor="#930350" />
+          <stop offset="0.583095" stopColor="#DC097B" stopOpacity="0.572917" />
+          <stop offset="1" stopColor="#D50073" stopOpacity="0" />
+        </radialGradient>
+        <linearGradient
+          id="paint1_linear_156_15"
+          x1="228.993"
+          y1="7.80071"
+          x2="105.909"
+          y2="280.62"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.153218" stopColor="#E3027C" />
+          <stop offset="0.713488" stopColor="#E3027C" stopOpacity="0" />
+        </linearGradient>
+        <clipPath id="clip0_156_15">
+          <rect width="357" height="309" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
   );
 };
 

@@ -20,7 +20,8 @@
 }
 
 body {
-  background-color: #1e1e1e;
+  /* background-color: #1e1e1e; */
+  background-color: black;
 }
 
 /* --- polygons - animation --- */
@@ -225,7 +226,7 @@ body {
 /*  --- sticky navbar ---  */
 
 .navbar {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.007);
   transition: 0.3s ease-in-out;
 }
 
@@ -236,6 +237,11 @@ body {
   z-index: 100;
   background-color: transparent;
   overflow: hidden;
+}
+
+.inner-bar {
+  background-color: rgba(46, 46, 46, 0.522);
+  backdrop-filter: blur(20px);
 }
 
 .logo-show {
@@ -266,4 +272,20 @@ body {
 .menu.menu-moved {
   right: 0;
   transform: translate(-10%);
+}
+
+.glow {
+  opacity: 1;
+  animation: 5s ease-in-out infinite glowCircle;
+
+}
+
+@keyframes glowCircle {
+  0%{
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
 }

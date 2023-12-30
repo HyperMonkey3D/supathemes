@@ -2,7 +2,7 @@ const Spheres = () => {
   return (
     <>
       <svg
-      width="115"
+        width="115"
         height="116"
         viewBox="0 0 115 116"
         fill="none"
@@ -39,7 +39,7 @@ const Spheres = () => {
         </g>
       </svg>
       <svg
-      width="115"
+        width="115"
         height="116"
         viewBox="0 0 115 116"
         fill="none"
@@ -60,9 +60,6 @@ const Spheres = () => {
           </g>
         </g>
       </svg>
-
-      
-
     </>
   );
 };

@@ -5,7 +5,7 @@ import pageScreenshot from "@/public/bar.png";
 
 const Themes = () => {
   return (
-    <section className="w-full xl:w-[1200px]  h-fit mb-24">
+    <section className="w-full xl:w-[1200px]  h-fit mb-24 mx-auto" id="explore">
       <div className="bg-gradient-to-tr from-brand-purple-dark from-10% via-brand-purple-mid  to-brand-purple-light to-60% w-full h-[550px]  sm:h-[650px]  lg:h-[750px] xl:rounded-2xl ">
         <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 h-full relative">
           <div className=" w-full lg:w-[400px] h-fit lg:h-full flex flex-col justify-center items-start pl-8">

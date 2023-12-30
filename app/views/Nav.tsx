@@ -1,5 +1,9 @@
 "use client";
 
+import Link from "next/link";
+import Image from "next/image";
+import logoBnW from "@/public/logoBnW.svg";
+
 const Nav = () => {
   if (typeof window !== "undefined") {
     window.onscroll = () => calculateStickiness();
@@ -24,20 +28,30 @@ const Nav = () => {
 
   return (
     <div id="navbar" className="py-4 navbar ">
-      <nav className="w-full xl:w-[900px] h-[60px] bg-black mx-auto  border border-black rounded-full flex items-center  ">
+      <nav className="w-full xl:w-[900px] h-[60px] inner-bar mx-auto  border border-brand-darker-gray rounded-full flex items-center  justify-center">
         <div className="flex w-full  items-center px-5 relative">
-          <div className="text-white w-16 h-5">
-            <h3 id="logo" className="logo-show">
-              SupaThemes
+          <div className="text-white w-16 h-5 flex items-center">
+            <h3 id="logo" className="logo-show ">
+              <Link href={"/"}>
+                <Image src={logoBnW} alt="logo" width={45} />
+              </Link>
             </h3>
           </div>
 
           <div id="menu" className=" menu">
-            <ul className="flex">
-              <li className=" text-white mr-3">menu one</li>
-              <li className=" text-white mr-3">menu two</li>
-              <li className=" text-white mr-2">menu trhee</li>
-              <li className=" text-white"> menu four</li>
+            <ul className="flex items-center ">
+              <li className=" text-white mr-3">
+                <Link href={"#supa"}>Supa</Link>
+              </li>
+              <li className=" text-white mr-3">
+                <Link href={"#immersive"}>Immersive</Link>
+              </li>
+              <li className=" text-white mr-2">
+                <Link href={"#features"}>Features</Link>
+              </li>
+              <li className=" text-white">
+                <Link href={"#explore"}>Explore</Link>
+              </li>
             </ul>
           </div>
         </div>

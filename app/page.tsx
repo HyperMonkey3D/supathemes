@@ -6,11 +6,13 @@ import Themes from "./views/Themes";
 
 export default function Home() {
   return (
-    <main className="bg-brand-dark-gray w-full xl:w-fit mx-auto content">
-      <Hero />
-      <Immersive />
-      <FeaturesGrid />
-      <Themes />
+    <main className=" w-full content">
+      <div>
+        <Hero />
+        <Immersive />
+        <FeaturesGrid />
+        <Themes />
+      </div>
     </main>
   );
 }
