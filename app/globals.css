@@ -22,6 +22,7 @@
 body {
   /* background-color: #1e1e1e; */
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 /* --- polygons - animation --- */
@@ -273,6 +274,8 @@ body {
   right: 0;
   transform: translate(-10%);
 }
+
+/* --- sphere in features --- */
 
 .glow {
   opacity: 1;

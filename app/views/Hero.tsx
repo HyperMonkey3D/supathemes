@@ -15,7 +15,7 @@ const Hero = () => {
           </h1>
           <div className="w-full flex justify-center md:justify-start z-50 pt-5">
             <div className="bg-brand-purple w-[275px] h-[72px] border border-brand-purple rounded-full flex justify-center items-center mt-8">
-              <Link href={"/"} className="text-white text-3xl">
+              <Link href={"/store"} className="text-white text-3xl">
                 Explore
               </Link>
             </div>

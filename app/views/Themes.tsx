@@ -15,7 +15,7 @@ const Themes = () => {
               </h2>
             </div>
             <div className=" w-[130px] h-[40px] md:w-[163px] lg:w-[183px] md:h-[50px] lg:h-[56px] border border-white rounded-full flex justify-center items-center">
-              <Link href={"/"} className="text-white">
+              <Link href={"/store"} className="text-white">
                 Get Started
               </Link>
             </div>
