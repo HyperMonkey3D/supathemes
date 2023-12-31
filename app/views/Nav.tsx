@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import logoBnW from "@/public/logoBnW.svg";
-import { Element, scroller, Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 const Nav = () => {
   if (typeof window !== "undefined") {
@@ -57,7 +57,7 @@ const Nav = () => {
                   to="immersive"
                   smooth={true}
                   duration={500}
-                  offset={-150}
+                  offset={-100}
                   className="cursor-pointer"
                 >
                   Immersive
