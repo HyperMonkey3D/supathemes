@@ -27,6 +27,7 @@ const config: Config = {
         "brand-purple-light": "rgba(109, 8, 236, 1)",
         "brand-purple-mid": "rgba(84, 0, 192, 1)",
         "brand-purple-dark": "rgba(38, 4, 82, 1)",
+        "brand-purple-blend": "rgba(109, 8, 236, 0.10)",
         "brand-pink": "#F9578F"
       }
     },

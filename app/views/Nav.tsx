@@ -63,7 +63,7 @@ const Nav = () => {
                   Immersive
                 </ScrollLink>
               </li>
-              <li className=" text-white mr-2">
+              <li className=" text-white mr-3">
                 <ScrollLink
                   to="features"
                   smooth={true}
@@ -74,7 +74,7 @@ const Nav = () => {
                   Features
                 </ScrollLink>
               </li>
-              <li className=" text-white">
+              <li className=" text-white mr-3">
                 <ScrollLink
                   to="explore"
                   smooth={true}
@@ -83,6 +83,17 @@ const Nav = () => {
                   className="cursor-pointer"
                 >
                   Explore
+                </ScrollLink>
+              </li>
+              <li className=" text-white">
+                <ScrollLink
+                  to="footer"
+                  smooth={true}
+                  duration={500}
+                  offset={0}
+                  className="cursor-pointer"
+                >
+                  Contact
                 </ScrollLink>
               </li>
             </ul>

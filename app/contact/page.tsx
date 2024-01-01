@@ -1,7 +1,9 @@
+import ContactView from "../views/ContactView"
+
 const Contact = () => {
     return(
         <div className="text-white">
-            contact
+            <ContactView />
         </div>
     )
 }

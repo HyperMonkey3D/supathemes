@@ -7,7 +7,7 @@ const Footer = () => {
   const squaresArray = [1, 2, 3, 4, 5, 6, 7, 8];
 
   return (
-    <footer className="w-full  h-fit pb-5 xl:pb-20 px-5 xl:px-0">
+    <footer id="footer" className="w-full  h-fit pb-5 xl:pb-20 px-5 xl:px-0">
       <div className="w-full xl:w-[1200px]  mx-auto ">
         <div className="relative w-full h-full ">
           <div className="absolute top-0 left-0 z-50 mix-blend-screen ">

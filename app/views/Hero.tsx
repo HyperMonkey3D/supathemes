@@ -14,7 +14,7 @@ const Hero = () => {
             Beautiful and Practical Website Themes Built with Framer
           </h1>
           <div className="w-full flex justify-center md:justify-start z-50 pt-5">
-            <div className="bg-brand-purple w-[275px] h-[72px] border border-brand-purple rounded-full flex justify-center items-center mt-8">
+            <div className=" w-[275px] h-[72px] bg-brand-purple border-brand-purple rounded-full flex justify-center items-center mt-8  ">
               <Link href={"/store"} className="text-white text-3xl">
                 Explore
               </Link>
