@@ -1,9 +1,12 @@
-const Privacy = () => {
-    return(
-        <div className="text-white">
-            privacy
-        </div>
-    )
-}
+import PrivacyView from "../views/PrivacyView";
 
-export default Privacy
+const Privacy = () => {
+  return (
+    <div className="w-full lg:w-[900px] px-5 mx-auto">
+      
+      <PrivacyView />
+    </div>
+  );
+};
+
+export default Privacy;

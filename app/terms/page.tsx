@@ -1,9 +1,12 @@
-const Terms = () => {
-    return(
-        <div className="text-white">
-            terms
-        </div>
-    )
-}
+import TermsView from "../views/Terms";
 
-export default Terms
+const Terms = () => {
+  return (
+    <div className="w-full lg:w-[900px] px-5 mx-auto">
+      
+      <TermsView />
+    </div>
+  );
+};
+
+export default Terms;
