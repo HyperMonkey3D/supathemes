@@ -4,7 +4,7 @@ interface Visible {
 
 const Polygon = ({ visible }: Visible) => {
   return (
-    <div className="relative -translate-y-8 -translate-x-10 sm:-translate-x-8  md:-translate-x-14 sm:-translate-y-10 md:-translate-y-10 lg:-translate-x-20 lg:-translate-y-14">
+    <div className="relative z-50 -translate-y-10 -translate-x-10 sm:-translate-x-8  md:-translate-x-14 sm:-translate-y-12 md:-translate-y-12 lg:-translate-x-20 lg:-translate-y-16">
       <svg
         width="180"
         height="182"

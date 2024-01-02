@@ -28,32 +28,32 @@ body {
 /* --- polygons - animation --- */
 
 .polygon-one {
-  animation: 2s ease-in-out 0s  poly-one;
+  animation: 2s ease-in-out 0s poly-one;
   transform: rotate(-3deg) translate(6%, 34%);
 }
 
 .polygon-two {
-  animation: 1.9s ease-in-out 0s  poly-two;
+  animation: 1.9s ease-in-out 0s poly-two;
   transform: rotate(20deg) scale(1.2) translate(35%, 17%);
 }
 
 .polygon-three {
-  animation: 1.8s ease-in-out 0s  poly-three;
+  animation: 1.8s ease-in-out 0s poly-three;
   transform: rotate(40deg) scale(1.3) translate(48%, 0);
 }
 
 .polygon-four {
-  animation: 1.7s ease-in-out 0s  poly-four;
+  animation: 1.7s ease-in-out 0s poly-four;
   transform: rotate(60deg) scale(1.5) translate(55%, -18%);
 }
 
 .polygon-five {
-  animation: 1.6s ease-in-out 0s  poly-five;
+  animation: 1.6s ease-in-out 0s poly-five;
   transform: rotate(80deg) scale(1.7) translate(55%, -36%);
 }
 
 .polygon-six {
-  animation: 1.5s ease-in-out 0s  poly-six;
+  animation: 1.5s ease-in-out 0s poly-six;
   transform: rotate(120deg) scale(2.2) translate(40%, -60%);
 }
 
@@ -280,15 +280,45 @@ body {
 .glow {
   opacity: 1;
   animation: 5s ease-in-out infinite glowCircle;
-
 }
 
 @keyframes glowCircle {
-  0%{
+  0% {
     opacity: 1;
   }
 
   50% {
     opacity: 0.2;
+  }
+}
+
+.animated-b {
+  background-color: #ff478e;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  mask-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(0, 42, 255, 0), rgba(104, 10, 255, 0.898));
+  mask-clip: padding-box, border-box;
+  mask-composite: intersect;
+  z-index: 0;
+  animation: 9s ease-in-out 1 backgroundAnimation;
+  animation-delay: 0s;
+}
+
+.animated-f {
+  background-color: #000000;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #000000;
+  }
+
+  20% {
+    background-color: #191919;
+  }
+
+  40% {
+    background-color: #ff478e;
   }
 }
