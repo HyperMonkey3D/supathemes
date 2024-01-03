@@ -3,7 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import logoBnW from "@/public/logoBnW.svg";
-import { Link as ScrollLink } from "react-scroll";
+import Menu from "../components/Menu";
+import MobileMenu from "../components/MobileMenu";
 
 const Nav = () => {
   if (typeof window !== "undefined") {
@@ -29,7 +30,7 @@ const Nav = () => {
 
   return (
     <div id="navbar" className="py-4 navbar ">
-      <nav className="w-full xl:w-[900px] h-[60px] inner-bar mx-auto  border border-brand-darker-gray rounded-full flex items-center  justify-center">
+      <nav className="w-[90%] md:w-[700px] lg:w-[900px] h-[60px] inner-bar mx-auto  border border-brand-darker-gray rounded-full flex items-center  justify-center">
         <div className="flex w-full  items-center px-5 relative">
           <div className="text-white w-16 h-5 flex items-center">
             <h3 id="logo" className="logo-show ">
@@ -38,65 +39,11 @@ const Nav = () => {
               </Link>
             </h3>
           </div>
-
-          <div id="menu" className=" menu">
-            <ul className="flex items-center ">
-              <li className=" text-white mr-3">
-                <ScrollLink
-                  to="supa"
-                  smooth={true}
-                  duration={500}
-                  offset={-150}
-                  className="cursor-pointer"
-                >
-                  Supa
-                </ScrollLink>
-              </li>
-              <li className=" text-white mr-3">
-                <ScrollLink
-                  to="immersive"
-                  smooth={true}
-                  duration={500}
-                  offset={-100}
-                  className="cursor-pointer"
-                >
-                  Immersive
-                </ScrollLink>
-              </li>
-              <li className=" text-white mr-3">
-                <ScrollLink
-                  to="features"
-                  smooth={true}
-                  duration={500}
-                  offset={-150}
-                  className="cursor-pointer"
-                >
-                  Features
-                </ScrollLink>
-              </li>
-              <li className=" text-white mr-3">
-                <ScrollLink
-                  to="explore"
-                  smooth={true}
-                  duration={500}
-                  offset={-150}
-                  className="cursor-pointer"
-                >
-                  Explore
-                </ScrollLink>
-              </li>
-              <li className=" text-white">
-                <ScrollLink
-                  to="footer"
-                  smooth={true}
-                  duration={500}
-                  offset={0}
-                  className="cursor-pointer"
-                >
-                  Contact
-                </ScrollLink>
-              </li>
-            </ul>
+          <div className="hidden sm:block">
+            <Menu />
+          </div>
+          <div className="block sm:hidden  w-full">
+            <MobileMenu />
           </div>
         </div>
       </nav>
