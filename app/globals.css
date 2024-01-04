@@ -25,6 +25,7 @@ body {
   scroll-behavior: smooth;
 }
 
+
 /* --- polygons - animation --- */
 
 .polygon-one {
@@ -236,7 +237,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 100;
-  background-color: transparentx;
+  background-color: transparent;
   overflow: visible;
 }
 
@@ -262,14 +263,20 @@ body {
   padding-top: 85px;
 }
 
-.menu {
-  position: absolute;
-  top: 0;
-  right: 50%;
-  transform: translate(50%);
-  transition: 0.3s ease-in-out;
-  z-index: 1000;
+@media (min-width: 640px) {
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%);
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  
 }
+
+
 
 .menu.menu-moved {
   right: 0;
@@ -322,4 +329,8 @@ body {
   40% {
     background-color: #ff478e;
   }
+}
+
+.back-logo {
+  z-index: -20;
 }

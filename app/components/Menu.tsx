@@ -2,9 +2,9 @@ import { Link as ScrollLink } from "react-scroll";
 
 const DesktopMenu = () => {
   return (
-    <div id="menu" className=" menu">
-      <ul className=" flex flex-col bg-slate-300 sm:bg-transparent  sm:flex-row items-center ">
-        <li className=" text-white mr-3">
+    <div id="menu" className="menu ">
+      <ul className="z-50  absolute top-12 left-0 w-full sm:top-0 sm:left-0 sm:relative flex flex-col sm:flex-row sm:items-center px-5 py-5 sm:px-0 sm:py-0">
+        <li className=" text-white mr-3 py-2 sm:py-0">
           <ScrollLink
             to="supa"
             smooth={true}
@@ -15,7 +15,7 @@ const DesktopMenu = () => {
             Supa
           </ScrollLink>
         </li>
-        <li className=" text-white mr-3">
+        <li className=" text-white mr-3 py-2 sm:py-0">
           <ScrollLink
             to="immersive"
             smooth={true}
@@ -26,7 +26,7 @@ const DesktopMenu = () => {
             Immersive
           </ScrollLink>
         </li>
-        <li className=" text-white mr-3">
+        <li className=" text-white mr-3 py-2 sm:py-0">
           <ScrollLink
             to="features"
             smooth={true}
@@ -37,7 +37,7 @@ const DesktopMenu = () => {
             Features
           </ScrollLink>
         </li>
-        <li className=" text-white mr-3">
+        <li className=" text-white mr-3 py-2 sm:py-0">
           <ScrollLink
             to="explore"
             smooth={true}
@@ -48,7 +48,7 @@ const DesktopMenu = () => {
             Explore
           </ScrollLink>
         </li>
-        <li className=" text-white">
+        <li className=" text-white py-2 sm:py-0">
           <ScrollLink
             to="footer"
             smooth={true}

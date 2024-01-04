@@ -4,8 +4,8 @@ import logo from "@/public/Group48.svg";
 
 const Logo = () => {
   return (
-    <div className="absolute top-0 left-0 right-0 bottom-0">
-      <div className="relative flex flex-col justify-start items-center sm:items-center sm:justify-center  sm:flex-row  w-full min-h-[500px] ">
+    <div className="absolute top-0 left-0 w-full -z-10 ">
+      <div className="relative  flex flex-col justify-start items-center sm:items-center sm:justify-center  sm:flex-row  w-full min-h-[500px] ">
         <Image
           src={logo}
           alt="logo"

@@ -5,11 +5,11 @@ const Hero = () => {
   const squaresArray = [1, 2, 3, 4, 5, 6, 7, 8];
 
   return (
-    <section className="w-full " id="supa">
+    <section className="w-full -z-30" id="supa">
       <div className="w-full xl:w-[1200px]  h-fit overflow-clip relative mx-auto xl:rounded-2xl">
         <Square numberOfSquares={squaresArray} gridPosition="top" />
         <Logo />
-        <div className="min-h-[300px] w-full px-10 pt-14 pb-36 lg:px-[140px] flex flex-col justify-between z-50">
+        <div className="min-h-[300px] w-full px-10 pt-14 pb-36 lg:px-[140px] flex flex-col justify-between">
           <h1 className="text-white text-5xl">
             Beautiful and Practical Website Themes Built with Framer
           </h1>
