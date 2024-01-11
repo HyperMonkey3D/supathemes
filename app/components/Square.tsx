@@ -31,8 +31,8 @@ const Square = ({ numberOfSquares, gridPosition }: Props) => {
 
   return (
     //gridposition top is on hero section
-    //gridposition bottom on footer
-    <div className="min-h-[500px] -z-10 w-full xl:w-[1200px] grid grid-cols-2 md:grid-cols-6 grid-rows-4 md:grid-rows-2 gap-0.5 bg-brand-stroke-dark-gray relative ">
+    //gridposition bottom is on footer
+    <div className="min-h-[500px]  w-full xl:w-[1200px] grid grid-cols-2 md:grid-cols-6 grid-rows-4 md:grid-rows-2 gap-0.5 bg-brand-stroke-dark-gray relative ">
       {gridPosition === "top" &&
         numberOfSquares.map((item, index) => {
           return (

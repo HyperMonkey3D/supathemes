@@ -24,7 +24,7 @@ const Immersive = () => {
 
   return (
     <section
-      className="w-full xl:w-[1200px] h-fit my-20 mx-auto relative px-5"
+      className="w-full xl:w-[1200px] h-fit my-20 mx-auto relative px-5 -z-10"
       id="immersive"
     >
       <div className="">

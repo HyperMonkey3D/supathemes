@@ -25,7 +25,6 @@ body {
   scroll-behavior: smooth;
 }
 
-
 /* --- polygons - animation --- */
 
 .polygon-one {
@@ -246,9 +245,14 @@ body {
   backdrop-filter: blur(20px);
 }
 
+.button-area {
+  z-index: 1000;
+}
+
 .logo-show {
   opacity: 0;
   transition: 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 .logo-show.logo-hide {
@@ -272,11 +276,7 @@ body {
     transition: 0.3s ease-in-out;
     z-index: 1000;
   }
-  
-  
 }
-
-
 
 .menu.menu-moved {
   right: 0;
@@ -333,4 +333,34 @@ body {
 
 .back-logo {
   z-index: -20;
+}
+
+/* -- menu icon -- */
+.position-bottom {
+  transform: translate(-50%, 30%) rotate(-45deg) scale(115%);
+  animation: 0.2s ease-in-out alternate animation-bottom;
+}
+
+@keyframes animation-bottom {
+  from {
+    transform: translate(0, 0) rotate(0) scale(100%);
+  }
+  to {
+    transform: translate(-50%, 30%) rotate(-45deg) scale(115%);
+  }
+}
+
+.position-upper {
+  transform: translate(30%, -7%) rotate(45deg) scale(115%);
+  animation: 0.2s ease-in-out alternate animation-upper;
+}
+
+@keyframes animation-upper {
+  from {
+    transform: translate(0, 0) rotate(0) scale(100%);
+  }
+
+  to {
+    transform: translate(30%, -7%) rotate(45deg) scale(115%);
+  }
 }

@@ -7,7 +7,7 @@ export const privacyPolicy: Data[] = [
   {
     title: "1. Introduction",
     content:
-      'Welcome to [Your Company Name] ("we," "our," or "us"). This Privacy Policy outlines how we collect,\
+      'Welcome to SupaThemes ("we," "our," or "us"). This Privacy Policy outlines how we collect,\
       use, and protect the personal information of users ("you," "your") who visit our website,\
       purchase our themes, or engage with our services.',
   },
@@ -15,7 +15,7 @@ export const privacyPolicy: Data[] = [
     title: "2. Information We Collect",
     content: "a.\ Personal Information\
     We may collect personal information, including but not limited to:\
-    Contact details (\name, email address, phone number)\
+    Contact details (name, email address, phone number)\
     Payment information\
     Billing and shipping addresses\
     b. Non-Personal Information\
@@ -60,6 +60,6 @@ export const privacyPolicy: Data[] = [
   },
   {
     title: "10. Contact Us",
-    content: "If you have any questions or concerns about our Privacy Policy, please contact us at [contact@email.com].",
+    content: "If you have any questions or concerns about our Privacy Policy, please contact us at support@supathemes.pro",
   },
 ];

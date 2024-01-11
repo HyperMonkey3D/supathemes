@@ -20,7 +20,6 @@ const Themes = () => {
               </Link>
             </div>
           </div>
-
           <div className=" h-fit w-[380px] sm:w-[480px]  md:w-[580px]  lg:w-[680px] absolute bottom-0 right-0 ">
             <Image src={grid} alt="grid" />
           </div>

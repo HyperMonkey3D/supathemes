@@ -29,8 +29,8 @@ const Nav = () => {
   }
 
   return (
-    <div id="navbar" className="py-4  z-50">
-      <nav className="z-50 w-[90%] md:w-[700px] lg:w-[900px] h-[60px] inner-bar mx-auto  border border-brand-darker-gray rounded-full flex items-center  justify-center">
+    <div id="navbar" className="py-4  ">
+      <nav className=" w-[90%] md:w-[700px] lg:w-[900px] h-[60px] inner-bar mx-auto  border border-brand-darker-gray rounded-full flex items-center  justify-center">
         <div className="flex w-full  items-center px-5 relative">
           <div className="text-white w-16 h-5 flex items-center">
             <div id="logo" className="logo-show">
