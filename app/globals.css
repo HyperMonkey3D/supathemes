@@ -54,6 +54,7 @@ body {
 
 .polygon-six {
   animation: 1.5s ease-in-out 0s poly-six;
+  --webkit-transform: rotate(120deg) scale(2.2) translate(40%, -60%);
   transform: rotate(120deg) scale(2.2) translate(40%, -60%);
 }
 
@@ -113,6 +114,7 @@ body {
   }
 
   to {
+    --webkit-transform: rotate(120deg) scale(2.2) translate(40%, -60%);
     transform: rotate(120deg) scale(2.2) translate(40%, -60%);
   }
 }
