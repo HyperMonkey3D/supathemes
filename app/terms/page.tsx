@@ -1,4 +1,11 @@
 import TermsView from "../views/Terms";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions",
+  description: "Terms and conditions for SupaThemes"
+}
+
 
 const Terms = () => {
   return (
