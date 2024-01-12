@@ -8,7 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Website themes for Framer",
-  description: "Beautiful and practical themes built with Framer for Framer"
+  description: "Beautiful and practical themes built with Framer for Framer",
+  verification: {
+    google: "google09338f57c9123055.html"
+  }
 };
 
 export default function RootLayout({
