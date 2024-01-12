@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Website themes for Framer",
   description: "Beautiful and practical themes built with Framer for Framer",
   verification: {
-    google: "google09338f57c9123055.html"
+    google: "PYDf0moaNQFxm2UOFEeIapSusgLiHZ-uJPPIvf-m_9U"
   }
 };
 
