@@ -15,8 +15,8 @@ export const contentType = 'image/png'
 // Image generation
 export default async function Image() {
   // Font
-  const interSemiBold = fetch(
-    new URL('./Inter-SemiBold.ttf', import.meta.url)
+  const inter = fetch(
+    new URL('./Inter.ttf', import.meta.url)
   ).then((res) => res.arrayBuffer())
  
   return new ImageResponse(
@@ -44,7 +44,7 @@ export default async function Image() {
       fonts: [
         {
           name: 'Inter',
-          data: await interSemiBold,
+          data: await inter,
           style: 'normal',
           weight: 400,
         },
