@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og'
+import { Inter } from "next/font/google";
  
 // Route segment config
 export const runtime = 'edge'
@@ -15,9 +16,9 @@ export const contentType = 'image/png'
 // Image generation
 export default async function Image() {
   // Font
-  const inter = fetch(
-    new URL('./Inter.ttf', import.meta.url)
-  ).then((res) => res.arrayBuffer())
+  // const inter = fetch(
+  //   new URL('./Inter.ttf', import.meta.url)
+  // ).then((res) => res.arrayBuffer())
  
   return new ImageResponse(
     (
@@ -40,15 +41,15 @@ export default async function Image() {
     {
       // For convenience, we can re-use the exported opengraph-image
       // size config to also set the ImageResponse's width and height.
-      ...size,
-      fonts: [
-        {
-          name: 'Inter',
-          data: await inter,
-          style: 'normal',
-          weight: 400,
-        },
-      ],
+      // ...size,
+      // fonts: [
+      //   {
+      //     name: 'Inter',
+      //     data: await inter,
+      //     style: 'normal',
+      //     weight: 400,
+      //   },
+      // ],
     }
   )
 }
