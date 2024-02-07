@@ -20,7 +20,7 @@ const ContactView = () => {
               support@supathemes.pro
             </h3>
             <h3 className="text-2xl md:text-3xl lg:text-4xl my-5 text-white font-light">
-              @supathemes
+              @SupaThemes
             </h3>
           </div>
         </div>

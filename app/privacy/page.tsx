@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 const Privacy = () => {
   return (
     <div className="w-full lg:w-[900px] px-5 mx-auto content">
-      
       <PrivacyView />
     </div>
   );

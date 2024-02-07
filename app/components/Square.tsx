@@ -70,7 +70,7 @@ const Square = ({ numberOfSquares, gridPosition }: Props) => {
           </div>
           <ul className="absolute right-5 bottom-10  md:right-10 flex justify-between w-[126px] md:w-[156px]  lg:w-[176px] z-50">
             <li className="w-[24px] h-[24px] sm:w-[32px] sm:h-[32px]">
-              <a href="https://twitter.com/" target="_blank">
+              <a href="https://twitter.com/SupaThemes" target="_blank">
                 <Image src={x} alt="x" />
               </a>
             </li>
