@@ -7,8 +7,8 @@ import Nav from "./views/Nav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Website themes for Framer",
-  description: "Beautiful and practical themes built with Framer for Framer",
+  title: "Framer Themes for the Web",
+  description: "Beautiful Framer Themes For Your Website",
   verification: {
     google: "PYDf0moaNQFxm2UOFEeIapSusgLiHZ-uJPPIvf-m_9U"
   }

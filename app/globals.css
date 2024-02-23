@@ -59,7 +59,8 @@ body {
 
 .polygon-six {
   animation: 1.5s ease-in-out 0s poly-six;
-  -webkit-transform: rotate(120deg) scale(2.2) translate(40%, -60%);
+  /* changed here to test ios value: -50 */
+  -webkit-transform: rotate(120deg) scale(2.2) translate(40%, -50%);
   transform: rotate(120deg) scale(2.2) translate(40%, -60%);
 }
 
@@ -240,6 +241,13 @@ body {
   background: linear-gradient(60deg, #b2e1fb, #ff478e, #fb0060);
   background-clip: text;
   color: rgba(205, 31, 31, 0.2);
+}
+
+.text-purple {
+  background: linear-gradient(60deg, #8976f6, #560bcf, #6d0180);
+  background-clip: text;
+  color: rgba(205, 31, 31, 0.2);
+  font-weight: bold;
 }
 
 /*  --- sticky navbar ---  */

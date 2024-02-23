@@ -14,8 +14,8 @@ const Themes = () => {
                 The Themes for the Web
               </h2>
             </div>
-            <div className=" w-[130px] h-[40px] md:w-[163px] lg:w-[183px] md:h-[50px] lg:h-[56px] border border-white rounded-full flex justify-center items-center">
-              <Link href={"/store"} className="text-white">
+            <div className=" w-[130px] h-[40px] md:w-[163px] lg:w-[183px] md:h-[50px] lg:h-[56px] border border-white rounded-full flex justify-center items-center inner-bar">
+              <Link href={"/store"} className="text-white hover:text-purple-400 delay-150 duration-300 ease-in-out">
                 Get Started
               </Link>
             </div>
